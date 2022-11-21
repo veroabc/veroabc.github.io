@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <head>
     <style type="text/css">
-
-        :root{
+         :root {
             --titleColor: #ff0000;
         }
+        
         body {
             background-image: url("https://assets.deutschlandfunk.de/FILE_f0a70dfa893ee147035cdea503bd25d2/1280x720.jpg?t=1597645027862");
             background-repeat: no-repeat;
@@ -12,30 +13,35 @@
             background-color: #ffffffdf;
             background-blend-mode: lighten;
         }
-        .infoTextHeader{
+        
+        .infoTextHeader {
             color: var(--titleColor);
         }
-        #root{
+        
+        #root {
             margin: auto;
         }
-        #phaseNaviBtns{
+        
+        #phaseNaviBtns {
             margin: auto;
             width: max-content;
         }
-        .txtStandard{
+        
+        .txtStandard {
             display: block;
             margin: 0;
             padding: 0;
-            
-            font-size:larger;
+            font-size: larger;
             font-weight: lighter;
             white-space: pre-line;
             text-align: justify;
         }
-        .naviBtn2{
+        
+        .naviBtn2 {
             margin-left: 20px;
         }
-        .btnStandard{
+        
+        .btnStandard {
             display: none;
             margin: 0;
             bottom: 10%;
@@ -47,40 +53,46 @@
             padding-left: 30px;
             margin-left: 20px;
         }
-
+        
         .btn-row {
             position: absolute;
-            top: 50%; /* Position Y halfway in */
-    left: 50%; /* Position X halfway in */
-    transform: translate(-50%,500%); 
-        
+            top: 50%;
+            /* Position Y halfway in */
+            left: 50%;
+            /* Position X halfway in */
+            transform: translate(-50%, 500%);
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
-        #titleIntro1{
+        
+        #titleIntro1 {
             text-align: center;
             font-size: 200%;
         }
-        #titleIntro2{
+        
+        #titleIntro2 {
             text-align: left;
             font-size: 150%;
         }
-        #txtIntro{
+        
+        #txtIntro {
             margin-top: 10%;
         }
-        .divTxt{
+        
+        .divTxt {
             display: none;
             margin-left: 20%;
             margin-right: 20%;
             margin-top: 5%;
             margin-bottom: 2%;
         }
-        #btnStart{
+        
+        #btnStart {
             display: block;
         }
-        #txtStopwatch{
+        
+        #txtStopwatch {
             text-align: center;
             font-size: 130%;
             margin: 0;
@@ -89,31 +101,37 @@
             position: absolute;
             transform: translateX(-50%) translateY(-50%);
         }
-        #iframeVideo{
+        
+        #iframeVideo {
             margin: 0;
             bottom: 10%;
             left: 50%;
             position: absolute;
             transform: translateX(-50%) translateY(-18%);
         }
-        #imgSeparation{
+        
+        #imgSeparation {
             margin: 0;
             bottom: 10%;
             left: 50%;
             position: absolute;
             transform: translateX(-50%) translateY(-45%);
         }
-        .radioBtn{
+        
+        .radioBtn {
             margin-top: 50px;
         }
-        .resultRowRight{
+        
+        .resultRowRight {
             background-color: #0f940082;
             display: block;
         }
-        .resultRowWrong{
+        
+        .resultRowWrong {
             background-color: #d5000081;
             display: block;
         }
+        
         .quiz-btn {
             background-color: #4255ff;
             padding: 1rem 2rem;
@@ -121,21 +139,22 @@
             color: white;
             text-decoration: none;
         }
+        
         #back_btn {
             display: none;
-
         }
     </style>
 </head>
+
 <body>
 
     <div id="root">
 
         <div class="divTxt" id="divIntro">
-            <b class="txtStandard"  id="titleIntro1">
+            <b class="txtStandard" id="titleIntro1">
                 Willkommen zum Workshop!
             </b>
-            <b class="txtStandard"  id="titleIntro2">
+            <b class="txtStandard" id="titleIntro2">
 
                 Thema: Zeitstruktur und Handlungsstruktur
                 Teilnehmer: mind. 4
@@ -177,12 +196,13 @@
             <b class="txtStandard" id="txtZeitstrukturWatch">
                 Das folgende Video vermittelt Inhalte zum Thema Zeitstruktur. Schaut Euch bitte dieses Video individuell oder zusammen an.
             </b>
-            <iframe id="iframeVideo" style="margin-bottom: 100px;" width="950" height="526" src="https://www.youtube.com/embed/hHX79uz0qck" title="Erzähltechnik - Zeitgestaltung -Erzählte Zeit und Erzählzeit - Erzähltechniken in der Epik erklärt!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="iframeVideo" style="margin-bottom: 100px;" width="950" height="526" src="https://www.youtube.com/embed/hHX79uz0qck" title="Erzähltechnik - Zeitgestaltung -Erzählte Zeit und Erzählzeit - Erzähltechniken in der Epik erklärt!" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
         <div class="divTxt" id="divZeitstrukturRead1">
             <b class="txtStandard" id="txtZeitstrukturRead1">
-                Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Kurzform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
+                Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Spielform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
 
 
 
@@ -194,7 +214,7 @@
 
                 Die <strong>Erzählte Zeit</strong> ist der Zeitraum, in dem sich das erzählte Geschehen abspielt.
             
-                <a class="quiz-btn" href="https://quizlet.com/731874333/match" target="_blank">Start Quizlet</a>
+                <a class="quiz-btn" href="https://quizlet.com/731874333/learn" target="_blank">Start Quizlet</a>
             
             </b>
         </div>
@@ -212,6 +232,9 @@
                 Bei einer <strong>Zeitraffung</strong> ist die Erzählzeit kürzer als die erzählte Zeit, wenn Zeitspannen übersprungen oder Vorgänge stark zusammengefasst wiedergegeben werden. Beispiel: "Nun verlor der ander die Geduld.  Er packte ..".
 
                 Bei einer <strong>Zeitdehnung</strong> hingegen ist die Erzählzeit länger als die erzählte Zeit. Z.B. wenn die Gedanken und Gefühle einer Figur in einem kurzen Handlungsmoment ausführlich wiedergegeben werden.
+            
+            
+                <a class="quiz-btn" href="https://quizlet.com/731874333/match" target="_blank">Start Quizlet</a>
             </b>
         </div>
         <div class="divTxt" id="divZeitstrukturQuiz1Question1">
@@ -296,28 +319,28 @@
                 Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
             </b>
             <br>
-            
+
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseIntro">
 
             <b class="txtStandard" id="txtZeitstrukturExercise">
                 Bitte denkt Euch nun in Eurer zuvor gebildeten Teilgruppe ein kleinen Text aus, welcher das von Euch gewähltes Erzähltempo anwendet. Schreibt den Text bitte auf eine der leeren Blätter, welche auf dem Tisch liegen. Aus zeitlichen Gründen sollte der Text nicht länger als ungefähr fünf Sätze beinhalten. Sofern Ihr als Teilgruppe fertig seid, wartet bitte auf die andere Teilgruppe und klickt dann auf den Weiter-Button.
             </b>
-            
+
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseDiscuss">
 
             <b class="txtStandard" id="txtZeitstrukturExerciseDiscuss">
                 Ließt Euch nun bitte innerhalb Eurer Teilgruppe den Text der anderen Teilgruppe durch. Wenn Ihr mit dem Lesen fertig seid, bestimmt jede Teilgruppe bitte, welches Erzähltempo die andere Teilgruppe gewählt hat.
             </b>
-            
+
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseGuess">
 
             <b class="txtStandard" id="txtZeitstrukturExerciseGuess">
                 Teilt als Teilgruppe der anderen Teilgruppe das von Euch vermutete Erzähltempo mit. Fahrt unabhängig von der Richtigkeit der Antwort der anderen Teilgruppe gemeinsam als ganze Gruppe mit der nächsten Seite fort.
             </b>
-            
+
         </div>
 
         <div class="divTxt" id="divHandlungsstrukturRead1">
@@ -420,7 +443,7 @@
                 Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
             </b>
             <br>
-            
+
         </div>
         <div class="divTxt" id="divOutro">
             <b class="txtStandard">
@@ -431,7 +454,7 @@
             <button id="back_btn" class="btnStandard">ZURÜCK</button>
             <button class="btnStandard" id="btnContinue" onclick="OnClickBtnContinue()">START</button>
         </div>
-        
+
         <b id="txtStopwatch"></b>
         <!-- <button id="naviBtn1" onclick="OnClickBtnIntro()">Einführung</button> -->
         <!-- <button class="naviBtn2" onclick="OnClickBtnInfo()">Informationen</button> -->
@@ -441,87 +464,87 @@
 </body>
 <script>
     // declares / initializes  globals
-    var sequenceCounter                     = 0;
+    var sequenceCounter = 0;
     var currentTimerId;
-    var quizAnswers                         = [];
-    const rightAnswers                      = {
-        1:  "2",
-        2:  "2",
-        3:  "2",
-        4:  "2",
-        5:  "2",
-        6:  "2",
-        7:  "2",
-        8:  "2"
-    }
-    // gets elements : divisions : preparation
-    const divIntro                              = document.getElementById("divIntro");
-    const divPath                               = document.getElementById("divPath");
-    const divSeparation                         = document.getElementById("divSeparation");
-    const divOutro                              = document.getElementById("divOutro");
+    var quizAnswers = [];
+    const rightAnswers = {
+            1: "2",
+            2: "2",
+            3: "2",
+            4: "2",
+            5: "2",
+            6: "2",
+            7: "2",
+            8: "2"
+        }
+        // gets elements : divisions : preparation
+    const divIntro = document.getElementById("divIntro");
+    const divPath = document.getElementById("divPath");
+    const divSeparation = document.getElementById("divSeparation");
+    const divOutro = document.getElementById("divOutro");
     // gets elements : divisions : Zeitstruktur
-    const divZeitstrukturWatch                  = document.getElementById("divZeitstrukturWatch");
-    const divZeitstrukturRead1                  = document.getElementById("divZeitstrukturRead1");
-    const divZeitstrukturRead2                  = document.getElementById("divZeitstrukturRead2");
-    const divZeitstrukturQuiz1Question1         = document.getElementById("divZeitstrukturQuiz1Question1");
-    const divZeitstrukturQuiz1Question2         = document.getElementById("divZeitstrukturQuiz1Question2");
-    const divZeitstrukturQuiz1Question3         = document.getElementById("divZeitstrukturQuiz1Question3");
-    const divZeitstrukturQuiz1Question4         = document.getElementById("divZeitstrukturQuiz1Question4");
-    const divZeitstrukturResults                = document.getElementById("divZeitstrukturResults");
-    const divZeitstrukturExerciseIntro          = document.getElementById("divZeitstrukturExerciseIntro");
-    const divZeitstrukturExerciseDiscuss        = document.getElementById("divZeitstrukturExerciseDiscuss");
-    const divZeitstrukturExerciseGuess          = document.getElementById("divZeitstrukturExerciseGuess");
+    const divZeitstrukturWatch = document.getElementById("divZeitstrukturWatch");
+    const divZeitstrukturRead1 = document.getElementById("divZeitstrukturRead1");
+    const divZeitstrukturRead2 = document.getElementById("divZeitstrukturRead2");
+    const divZeitstrukturQuiz1Question1 = document.getElementById("divZeitstrukturQuiz1Question1");
+    const divZeitstrukturQuiz1Question2 = document.getElementById("divZeitstrukturQuiz1Question2");
+    const divZeitstrukturQuiz1Question3 = document.getElementById("divZeitstrukturQuiz1Question3");
+    const divZeitstrukturQuiz1Question4 = document.getElementById("divZeitstrukturQuiz1Question4");
+    const divZeitstrukturResults = document.getElementById("divZeitstrukturResults");
+    const divZeitstrukturExerciseIntro = document.getElementById("divZeitstrukturExerciseIntro");
+    const divZeitstrukturExerciseDiscuss = document.getElementById("divZeitstrukturExerciseDiscuss");
+    const divZeitstrukturExerciseGuess = document.getElementById("divZeitstrukturExerciseGuess");
     // gets elements : divisions : Handlungsstruktur
-    const divHandlungsstrukturRead1             = document.getElementById("divHandlungsstrukturRead1");
-    const divHandlungsstrukturRead2             = document.getElementById("divHandlungsstrukturRead2");
-    const divHandlungsstrukturQuiz1Question1    = document.getElementById("divHandlungsstrukturQuiz1Question1");
-    const divHandlungsstrukturQuiz1Question2    = document.getElementById("divHandlungsstrukturQuiz1Question2");
-    const divHandlungsstrukturQuiz1Question3    = document.getElementById("divHandlungsstrukturQuiz1Question3");
-    const divHandlungsstrukturQuiz1Question4    = document.getElementById("divHandlungsstrukturQuiz1Question4");
-    const divHandlungsstrukturResults           = document.getElementById("divHandlungsstrukturResults");
+    const divHandlungsstrukturRead1 = document.getElementById("divHandlungsstrukturRead1");
+    const divHandlungsstrukturRead2 = document.getElementById("divHandlungsstrukturRead2");
+    const divHandlungsstrukturQuiz1Question1 = document.getElementById("divHandlungsstrukturQuiz1Question1");
+    const divHandlungsstrukturQuiz1Question2 = document.getElementById("divHandlungsstrukturQuiz1Question2");
+    const divHandlungsstrukturQuiz1Question3 = document.getElementById("divHandlungsstrukturQuiz1Question3");
+    const divHandlungsstrukturQuiz1Question4 = document.getElementById("divHandlungsstrukturQuiz1Question4");
+    const divHandlungsstrukturResults = document.getElementById("divHandlungsstrukturResults");
     // gets elements : buttons, texts
-    const btnContinue                           = document.getElementById("btnContinue");
-    const btnBack                               = document.getElementById("back_btn");
-    const txtStopwatch                          = document.getElementById("txtStopwatch");
-    const btnQuiz1                              = divZeitstrukturQuiz1Question1.getElementsByTagName("button")[0];
-    const btnQuiz2                              = divZeitstrukturQuiz1Question2.getElementsByTagName("button")[0];
-    const btnQuiz3                              = divZeitstrukturQuiz1Question3.getElementsByTagName("button")[0];
-    const btnQuiz4                              = divZeitstrukturQuiz1Question4.getElementsByTagName("button")[0];
-    const btnQuiz5                              = divZeitstrukturQuiz1Question1.getElementsByTagName("button")[0];
-    const btnQuiz6                              = divZeitstrukturQuiz1Question2.getElementsByTagName("button")[0];
-    const btnQuiz7                              = divZeitstrukturQuiz1Question3.getElementsByTagName("button")[0];
-    const btnQuiz8                              = divZeitstrukturQuiz1Question4.getElementsByTagName("button")[0];
+    const btnContinue = document.getElementById("btnContinue");
+    const btnBack = document.getElementById("back_btn");
+    const txtStopwatch = document.getElementById("txtStopwatch");
+    const btnQuiz1 = divZeitstrukturQuiz1Question1.getElementsByTagName("button")[0];
+    const btnQuiz2 = divZeitstrukturQuiz1Question2.getElementsByTagName("button")[0];
+    const btnQuiz3 = divZeitstrukturQuiz1Question3.getElementsByTagName("button")[0];
+    const btnQuiz4 = divZeitstrukturQuiz1Question4.getElementsByTagName("button")[0];
+    const btnQuiz5 = divZeitstrukturQuiz1Question1.getElementsByTagName("button")[0];
+    const btnQuiz6 = divZeitstrukturQuiz1Question2.getElementsByTagName("button")[0];
+    const btnQuiz7 = divZeitstrukturQuiz1Question3.getElementsByTagName("button")[0];
+    const btnQuiz8 = divZeitstrukturQuiz1Question4.getElementsByTagName("button")[0];
 
     btnBack.onclick = OnClickBtnContinue;
 
     // plays alarm sound
-    function alarm(){
-        let alarm1  = new Audio("data:audio/wav;base64,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qJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAACU=");
-        let alarm2  = new Audio("http://sfxcontent.s3.amazonaws.com/soundfx/SubmarineDive.mp3");
-        let alarm3  = new Audio("http://graphisme.gratuit.5.free.fr/Playlist1/Cartoons/BurglarAlarm.wav");
-        let alarm4  = new Audio("http://thecyberbuddy.com/sounds/urgent.wav");
-        let alarm5  = new Audio("http://thestablesbb.powweb.com/WAV%20FILES/alarm_clock.wav");
-        let alarm6  = new Audio("http://www.maximumawesome.com/mediarama/siren.mp3");
-        let alarm7  = new Audio("http://o.carette.free.fr/acces/mid/Midi/bruit/alarm.wav");
-        let alarm8  = new Audio("http://www.healthfreedomusa.org/downloads/iMovie.app/Contents/Resources/iMovie%20%2708%20Sound%20Effects/Alarm.mp3");
-        let alarm9  = new Audio("http://cd.textfiles.com/sbsw/HIGHTECH/BROADCA.WAV");
+    function alarm() {
+        let alarm1 = new Audio("data:audio/wav;base64,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qJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAACU=");
+        let alarm2 = new Audio("http://sfxcontent.s3.amazonaws.com/soundfx/SubmarineDive.mp3");
+        let alarm3 = new Audio("http://graphisme.gratuit.5.free.fr/Playlist1/Cartoons/BurglarAlarm.wav");
+        let alarm4 = new Audio("http://thecyberbuddy.com/sounds/urgent.wav");
+        let alarm5 = new Audio("http://thestablesbb.powweb.com/WAV%20FILES/alarm_clock.wav");
+        let alarm6 = new Audio("http://www.maximumawesome.com/mediarama/siren.mp3");
+        let alarm7 = new Audio("http://o.carette.free.fr/acces/mid/Midi/bruit/alarm.wav");
+        let alarm8 = new Audio("http://www.healthfreedomusa.org/downloads/iMovie.app/Contents/Resources/iMovie%20%2708%20Sound%20Effects/Alarm.mp3");
+        let alarm9 = new Audio("http://cd.textfiles.com/sbsw/HIGHTECH/BROADCA.WAV");
         let alarm10 = new Audio("http://cd.textfiles.com/mmplus/MEDIA/WAV/EFFECTS/FR_LRMNS.WAV");
         let alarm11 = new Audio("http://scouts91arpajon.free.fr/souvenirs/troupe/programme/9900/alarm.wav");
         alarm4.play();
     }
     // starts a timer, which counts down
-    function startTimer(callback, startMinute, startSecond = 0){
+    function startTimer(callback, startMinute, startSecond = 0) {
 
         let currentMinute = startMinute;
         let currentSecond = startSecond;
         const element = document.getElementById("txtStopwatch");
         element.innerHTML = `${currentMinute > 9 ? currentMinute : "0" + currentMinute}:${currentSecond > 9 ? currentSecond : "0" + currentSecond}`;
-        currentTimerId = setInterval(function(){
-            if(currentSecond === 0){
-                if(currentMinute > 0){
+        currentTimerId = setInterval(function() {
+            if (currentSecond === 0) {
+                if (currentMinute > 0) {
                     currentMinute--;
                     currentSecond = 60;
-                }else{
+                } else {
                     clearInterval(currentTimerId);
                     callback();
                     currentSecond++;
@@ -533,27 +556,27 @@
 
     }
     // captures the answer of a quiz
-    function captureAnswer(rootElement){
+    function captureAnswer(rootElement) {
         const radioBtns = rootElement.getElementsByTagName("input");
-        for(let i = 0; i < radioBtns.length; i++){
+        for (let i = 0; i < radioBtns.length; i++) {
             const radioBtn = radioBtns[i];
-            if(radioBtn.checked){
+            if (radioBtn.checked) {
                 quizAnswers.push(radioBtn.value);
             }
         }
     }
     // calculates the results of the exercises and quizes
-    function calculateResults(rootElement, maxQuestion){
+    function calculateResults(rootElement, maxQuestion) {
         let startIndex = 1;
-        if(maxQuestion > 4){
+        if (maxQuestion > 4) {
             startIndex = 5;
         }
-        for(let i = startIndex; i <= maxQuestion; i++){
+        for (let i = startIndex; i <= maxQuestion; i++) {
             const resultRow = document.createElement("b");
             resultRow.innerHTML = `Thema: ${maxQuestion > 4 ? "Handlungsstruktur" : "Zeitstruktur"} | Frage: ${i} | Deine Antwort: ${quizAnswers[i-1] == undefined ? "keine Antwort" : quizAnswers[i-1]} | Richtige Antwort: ${rightAnswers[i]}`;
-            if (rightAnswers[i] === quizAnswers[i-1]){
+            if (rightAnswers[i] === quizAnswers[i - 1]) {
                 resultRow.setAttribute("class", "resultRowRight");
-            }else{
+            } else {
                 resultRow.setAttribute("class", "resultRowWrong");
             }
             rootElement.appendChild(document.createElement("br"));
@@ -561,9 +584,9 @@
         }
     }
     // executes, when the continue button is clicked and starts the next sequence
-    function OnClickBtnContinue(e){
+    function OnClickBtnContinue(e) {
         console.log(e)
-        // clears the time of the current timer according to the id (standard library)
+            // clears the time of the current timer according to the id (standard library)
         clearInterval(currentTimerId);
         let btnElement;
         if (e) {
@@ -573,7 +596,7 @@
         }
         console.log(sequenceCounter, e)
 
-        const pageElement =  document.getElementsByClassName("divTxt");
+        const pageElement = document.getElementsByClassName("divTxt");
 
         for (let i = 0; i < pageElement.length; i++) {
             let el = pageElement[i];
@@ -581,7 +604,7 @@
         }
 
         // checks which sequence to execute
-        switch(sequenceCounter){
+        switch (sequenceCounter) {
             // Sequence 01 : Introduction
             case 1:
                 // turns on visibilities
@@ -589,7 +612,7 @@
                 btnContinue.style.display = "block";
                 btnBack.style.display = "none";
                 break;
-            // Sequence 02 : Workshop path overview
+                // Sequence 02 : Workshop path overview
             case 2:
                 // turns off visibilities
                 divIntro.style.display = "none";
@@ -599,121 +622,121 @@
                 btnContinue.innerHTML = "WEITER";
                 btnBack.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1);
                 break;
-            // Sequence 03 : Group separation
+                // Sequence 03 : Group separation
             case 3:
                 // turns off visibilities
                 divPath.style.display = "none";
                 // turns off visibilities
                 divSeparation.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 40);
                 break;
-            // Sequence 04 : Watching of Zeitstruktur
+                // Sequence 04 : Watching of Zeitstruktur
             case 4:
                 // turns off visibilities
                 divSeparation.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturWatch.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 5);
                 break;
-            // Sequence 05 : Reading of Zeitstruktur : Zeiten
+                // Sequence 05 : Reading of Zeitstruktur : Zeiten
             case 5:
                 // turns off visibilities
                 divZeitstrukturWatch.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturRead1.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 06 : Reading of Zeitstruktur : Erzähltempos
+                // Sequence 06 : Reading of Zeitstruktur : Erzähltempos
             case 6:
                 // turns off visibilities
                 divZeitstrukturRead1.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturRead2.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 45);
                 break;
-            // Sequence 07 : Quiz of Zeitstruktur 1
+                // Sequence 07 : Quiz of Zeitstruktur 1
             case 7:
                 // turns off visibilities
                 divZeitstrukturRead2.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturQuiz1Question1.style.display = "block";
                 // executes, when the submit button of a quiz 1 was triggered and captures the answer
-                btnQuiz1.onclick = function(){
+                btnQuiz1.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question1);
                 };
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 08 : Quiz of Zeitstruktur 2
+                // Sequence 08 : Quiz of Zeitstruktur 2
             case 8:
                 // turns off visibilities
                 divZeitstrukturQuiz1Question1.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturQuiz1Question2.style.display = "block";
                 // executes, when the submit button of a quiz 1 was triggered and captures the answer
-                btnQuiz2.onclick = function(){
+                btnQuiz2.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question2);
                 };
                 // captures the answer of the previous question
                 btnQuiz1.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 09 : Quiz of Zeitstruktur 3
+                // Sequence 09 : Quiz of Zeitstruktur 3
             case 9:
                 // turns off visibilities
                 divZeitstrukturQuiz1Question2.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturQuiz1Question3.style.display = "block";
                 // executes, when the submit button of a quiz 1 was triggered and captures the answer
-                btnQuiz3.onclick = function(){
+                btnQuiz3.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question3);
                 };
                 // captures the answer of the previous question
                 btnQuiz2.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 10 : Quiz of Zeitstruktur 4
+                // Sequence 10 : Quiz of Zeitstruktur 4
             case 10:
                 // turns off visibilities
                 divZeitstrukturQuiz1Question3.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturQuiz1Question4.style.display = "block";
                 // executes, when the submit button of a quiz 1 was triggered and captures the answer
-                btnQuiz4.onclick = function(){
+                btnQuiz4.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question4);
                 };
                 // captures the answer of the previous question
                 btnQuiz3.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 11 : Results of Zeitstruktur
+                // Sequence 11 : Results of Zeitstruktur
             case 11:
                 // turns off visibilities
                 divZeitstrukturQuiz1Question4.style.display = "none";
@@ -724,134 +747,134 @@
                 // calculates the results
                 calculateResults(divZeitstrukturResults, 4);
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 12 : Exercise of Zeitstruktur : Introduction
+                // Sequence 12 : Exercise of Zeitstruktur : Introduction
             case 12:
                 // turns off visibilities
                 divZeitstrukturResults.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturExerciseIntro.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1, 30);
                 break;
-            // Sequence 13 : Exercise of Zeitstruktur : Discuss
+                // Sequence 13 : Exercise of Zeitstruktur : Discuss
             case 13:
                 // turns off visibilities
                 divZeitstrukturExerciseIntro.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturExerciseDiscuss.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1, 30);
                 break;
-            // Sequence 14 : Exercise of Zeitstruktur : Guess
+                // Sequence 14 : Exercise of Zeitstruktur : Guess
             case 14:
                 // turns off visibilities
                 divZeitstrukturExerciseDiscuss.style.display = "none";
                 // turns on visibilities
                 divZeitstrukturExerciseGuess.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1, 30);
                 break;
-            // Sequence 15 : Reading of Handlungsstruktur : ...
+                // Sequence 15 : Reading of Handlungsstruktur : ...
             case 15:
                 // turns off visibilities
                 divZeitstrukturExerciseGuess.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturRead1.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1, 30);
                 break;
-            // Sequence 16 : Reading of Handlungsstruktur : ...
+                // Sequence 16 : Reading of Handlungsstruktur : ...
             case 16:
                 // turns off visibilities
                 divHandlungsstrukturRead1.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturRead2.style.display = "block";
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 1, 30);
                 break;
-            // Sequence 17 : Quiz of Handlungsstruktur 1
+                // Sequence 17 : Quiz of Handlungsstruktur 1
             case 17:
                 // turns off visibilities
                 divHandlungsstrukturRead2.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturQuiz1Question1.style.display = "block";
                 // executes, when the submit button of a quiz 2 was triggered and captures the answer
-                btnQuiz5.onclick = function(){
+                btnQuiz5.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question1);
                 };
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 18 : Quiz of Handlungsstruktur 2
+                // Sequence 18 : Quiz of Handlungsstruktur 2
             case 18:
                 // turns off visibilities
                 divHandlungsstrukturQuiz1Question1.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturQuiz1Question2.style.display = "block";
                 // executes, when the submit button of a quiz 2 was triggered and captures the answer
-                btnQuiz6.onclick = function(){
+                btnQuiz6.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question1);
                 };
                 // captures the answer of the previous question
                 btnQuiz5.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 19 : Quiz of Handlungsstruktur 3
+                // Sequence 19 : Quiz of Handlungsstruktur 3
             case 19:
                 // turns off visibilities
                 divHandlungsstrukturQuiz1Question2.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturQuiz1Question3.style.display = "block";
                 // executes, when the submit button of a quiz 2 was triggered and captures the answer
-                btnQuiz7.onclick = function(){
+                btnQuiz7.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question1);
                 };
                 // captures the answer of the previous question
                 btnQuiz6.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 20 : Quiz of Handlungsstruktur 4
+                // Sequence 20 : Quiz of Handlungsstruktur 4
             case 20:
                 // turns off visibilities
                 divHandlungsstrukturQuiz1Question3.style.display = "none";
                 // turns on visibilities
                 divHandlungsstrukturQuiz1Question4.style.display = "block";
                 // executes, when the submit button of a quiz 2 was triggered and captures the answer
-                btnQuiz8.onclick = function(){
+                btnQuiz8.onclick = function() {
                     captureAnswer(divZeitstrukturQuiz1Question1);
                 };
                 // captures the answer of the previous question
                 btnQuiz7.click();
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 21 : Results of Handlungsstruktur
+                // Sequence 21 : Results of Handlungsstruktur
             case 21:
-            btnContinue.style.display = "block";
+                btnContinue.style.display = "block";
                 // turns off visibilities
                 divHandlungsstrukturQuiz1Question4.style.display = "none";
                 // turns on visibilities
@@ -861,11 +884,11 @@
                 // calculates the results
                 calculateResults(divHandlungsstrukturResults, 8);
                 // starts the timer
-                startTimer(function(){
+                startTimer(function() {
                     alarm();
                 }, 0, 30);
                 break;
-            // Sequence 22 : Outro
+                // Sequence 22 : Outro
             case 22:
                 // turns off visibilities
                 divHandlungsstrukturResults.style.display = "none";

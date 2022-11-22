@@ -60,7 +60,7 @@
             /* Position Y halfway in */
             left: 50%;
             /* Position X halfway in */
-            transform: translate(-50%, 500%);
+            transform: translate(-50%, 600%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -82,10 +82,8 @@
         
         .divTxt {
             display: none;
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 5%;
-            margin-bottom: 2%;
+            margin: 10% auto;
+            max-width: 1200px;
         }
         
         #btnStart {
@@ -102,20 +100,21 @@
             transform: translateX(-50%) translateY(-50%);
         }
         
+        .center-content {
+            margin-top: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        
         #iframeVideo {
             margin: 0;
-            bottom: 10%;
-            left: 50%;
-            position: absolute;
-            transform: translateX(-50%) translateY(-18%);
         }
         
         #imgSeparation {
             margin: 0;
-            bottom: 10%;
-            left: 50%;
-            position: absolute;
-            transform: translateX(-50%) translateY(-45%);
         }
         
         .radioBtn {
@@ -152,95 +151,99 @@
 
         <div class="divTxt" id="divIntro">
             <b class="txtStandard" id="titleIntro1">
-                Willkommen zum Workshop!
-            </b>
+            Willkommen zum Workshop!
+        </b>
             <b class="txtStandard" id="titleIntro2">
 
-                Thema: Zeitstruktur und Handlungsstruktur
-                Teilnehmer: mind. 4
-            </b>
+            Thema: Zeitstruktur und Handlungsstruktur
+            Teilnehmer: mind. 4
+        </b>
             <b class="txtStandard" id="txtIntro">
-                Bitte stellt sicher, dass alle Gruppenmitglieder soweit sind. Drückt danach dann alle jeweils für sich den Start-Button, um den Workshop zu beginnen. Wir wünschen Euch beim Workshop viel Spaß!
+            Bitte stellt sicher, dass alle Gruppenmitglieder soweit sind. Drückt danach dann alle jeweils für sich den Start-Button, um den Workshop zu beginnen. Wir wünschen Euch beim Workshop viel Spaß!
 
-                Der untere Start-Button ist auch der Button, mit dem Ihr auf die nächste Seite gelangt. Bitte stellt sicher, dass Ihr diesen Button erst anklickt, sobald Ihr wirklich fertig seid. Unter dem Start-Button befindet sich auf den folgenden Seiten ein Timer. Dieser Timer zählt herunter und dient zur zeitlichen Orientierung. Es wird kein Wechsel zur nächsten Seite erzwungen. Jedoch ist dies die geplante Zeitspanne für eine Seite. Versucht Euch daher bitte daran zu halten.
-            </b>
+            Der untere Start-Button ist auch der Button, mit dem Ihr auf die nächste Seite gelangt. Bitte stellt sicher, dass Ihr diesen Button erst anklickt, sobald Ihr wirklich fertig seid. Unter dem Start-Button befindet sich auf den folgenden Seiten ein Timer. Dieser Timer zählt herunter und dient zur zeitlichen Orientierung. Es wird kein Wechsel zur nächsten Seite erzwungen. Jedoch ist dies die geplante Zeitspanne für eine Seite. Versucht Euch daher bitte daran zu halten.
+        </b>
         </div>
         <div class="divTxt" id="divPath">
             <b class="txtStandard" id="txtPath">
-                Zunächst erhälst Du einen kurzen Überblick über den Ablauf des Workshops. Die folgende Darstellung beschreibt den groben Ablauf. Genauere Informationen darüber, was als nächstes zu tun ist, erhälst Du im Laufe des Workshops.
+            Zunächst erhälst Du einen kurzen Überblick über den Ablauf des Workshops. Die folgende Darstellung beschreibt den groben Ablauf. Genauere Informationen darüber, was als nächstes zu tun ist, erhälst Du im Laufe des Workshops.
 
 
 
-                1. Gruppeneinteilung
+            1. Gruppeneinteilung
 
-                2. Infos zum Thema: Zeitstruktur
-                3. Aufgaben
-                4. Quiz-Fragen
-                5. Kreatives Spiel
+            2. Infos zum Thema: Zeitstruktur
+            3. Aufgaben
+            4. Quiz-Fragen
+            5. Kreatives Spiel
 
-                6. Infos zum Thema: Handlungsstruktur
-                7. Aufgaben
-                8. Quiz-Fragen
-            </b>
+            6. Infos zum Thema: Handlungsstruktur
+            7. Aufgaben
+            8. Quiz-Fragen
+        </b>
         </div>
         <div class="divTxt" id="divSeparation">
             <b class="txtStandard" id="txtSeparation">
-                Bitte teilt Euch in zwei Teilgruppen auf. Anschließend sucht sich bitte jede Teilgruppe hintereinander eine Karte zum Thema Erzähltempo aus.
-                Die jeweils andere Teilgruppe dreht sich bitte um, damit sie die Wahl nicht sehen kann. Die Karten dafür liegen auf dem Tisch.
-            </b>
-            <img id="imgSeparation" src="https://www.cmshs-bloggt.de/wp-content/uploads/2018/07/005836_lo-res-600x400.jpg">
+            Bitte teilt Euch in zwei Teilgruppen auf. Anschließend sucht sich bitte jede Teilgruppe hintereinander eine Karte zum Thema Erzähltempo aus.
+            Die jeweils andere Teilgruppe dreht sich bitte um, damit sie die Wahl nicht sehen kann. Die Karten dafür liegen auf dem Tisch.
+        </b>
+            <div class="center-content">
+                <img id="imgSeparation" src="https://www.cmshs-bloggt.de/wp-content/uploads/2018/07/005836_lo-res-600x400.jpg">
+            </div>
         </div>
 
         <div class="divTxt" id="divZeitstrukturWatch">
 
             <b class="txtStandard" id="txtZeitstrukturWatch">
-                Das folgende Video vermittelt Inhalte zum Thema Zeitstruktur. Schaut Euch bitte dieses Video individuell oder zusammen an.
-            </b>
-            <iframe id="iframeVideo" style="margin-bottom: 100px;" width="950" height="526" src="https://www.youtube.com/embed/hHX79uz0qck" title="Erzähltechnik - Zeitgestaltung -Erzählte Zeit und Erzählzeit - Erzähltechniken in der Epik erklärt!" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            Das folgende Video vermittelt Inhalte zum Thema Zeitstruktur. Schaut Euch bitte dieses Video individuell oder zusammen an.
+        </b>
+            <div class="center-content">
+                <iframe id="iframeVideo" style="margin-bottom: 100px;" width="950" height="526" src="https://www.youtube.com/embed/hHX79uz0qck" title="Erzähltechnik - Zeitgestaltung -Erzählte Zeit und Erzählzeit - Erzähltechniken in der Epik erklärt!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
         </div>
         <div class="divTxt" id="divZeitstrukturRead1">
             <b class="txtStandard" id="txtZeitstrukturRead1">
-                Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Spielform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
+            Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Spielform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
 
 
 
 
 
-                Die <strong>Zeit</strong> bestimmt, ob und inwieweit die Geschichte historisch verortet ist, ob sie sich klar erkennbar einer historischen Situation zuordnen lässt und welche Bedeutung diese Situation für das erzählte Geschehen hat.
+            Die <strong>Zeit</strong> bestimmt, ob und inwieweit die Geschichte historisch verortet ist, ob sie sich klar erkennbar einer historischen Situation zuordnen lässt und welche Bedeutung diese Situation für das erzählte Geschehen hat.
 
-                Die <strong>Erzählzeit</strong> entspricht der Zeit, die man braucht, um den Text zu lesen.
+            Die <strong>Erzählzeit</strong> entspricht der Zeit, die man braucht, um den Text zu lesen.
 
-                Die <strong>Erzählte Zeit</strong> ist der Zeitraum, in dem sich das erzählte Geschehen abspielt.
-            
-                <a class="quiz-btn" href="https://quizlet.com/731874333/learn" target="_blank">Start Quizlet</a>
-            
-            </b>
+            Die <strong>Erzählte Zeit</strong> ist der Zeitraum, in dem sich das erzählte Geschehen abspielt.
+
+            <a class="quiz-btn" href="https://quizlet.com/731874333/learn" target="_blank">Start Quizlet</a>
+
+        </b>
         </div>
         <div class="divTxt" id="divZeitstrukturRead2">
 
             <b class="txtStandard" id="txtZeitstrukturRead2">
-                Grundsätzlich spricht man von drei <strong>Erzähltempo</strong>, in denen Texte oder Teile von Texten ablaufen können. Entspricht die Erzählzeit der erzählten Zeit, so liegt eine Zeitdeckung vor. Ist die Erzählzeit kürzer als die erzählte Zeit, hat man es mit einer Zeitraffung zu tun, im umgekehrten Fall mit einer Zeitdehnung. 
+            Grundsätzlich spricht man von drei <strong>Erzähltempo</strong>, in denen Texte oder Teile von Texten ablaufen können. Entspricht die Erzählzeit der erzählten Zeit, so liegt eine Zeitdeckung vor. Ist die Erzählzeit kürzer als die erzählte Zeit, hat man es mit einer Zeitraffung zu tun, im umgekehrten Fall mit einer Zeitdehnung.
 
 
 
 
 
-                Eine <strong>Zeitdeckung</strong> liegt vor, wenn die Erzählzeit und die erzählte Zeit sich im spezifischen Erzählen decken.
+            Eine <strong>Zeitdeckung</strong> liegt vor, wenn die Erzählzeit und die erzählte Zeit sich im spezifischen Erzählen decken.
 
-                Bei einer <strong>Zeitraffung</strong> ist die Erzählzeit kürzer als die erzählte Zeit, wenn Zeitspannen übersprungen oder Vorgänge stark zusammengefasst wiedergegeben werden. Beispiel: "Nun verlor der ander die Geduld.  Er packte ..".
+            Bei einer <strong>Zeitraffung</strong> ist die Erzählzeit kürzer als die erzählte Zeit, wenn Zeitspannen übersprungen oder Vorgänge stark zusammengefasst wiedergegeben werden. Beispiel: "Nun verlor der ander die Geduld.  Er packte ..".
 
-                Bei einer <strong>Zeitdehnung</strong> hingegen ist die Erzählzeit länger als die erzählte Zeit. Z.B. wenn die Gedanken und Gefühle einer Figur in einem kurzen Handlungsmoment ausführlich wiedergegeben werden.
-            
-            
-                <a class="quiz-btn" href="https://quizlet.com/731874333/match" target="_blank">Start Quizlet</a>
-            </b>
+            Bei einer <strong>Zeitdehnung</strong> hingegen ist die Erzählzeit länger als die erzählte Zeit. Z.B. wenn die Gedanken und Gefühle einer Figur in einem kurzen Handlungsmoment ausführlich wiedergegeben werden.
+
+
+            <a class="quiz-btn" href="https://quizlet.com/731874333/match" target="_blank">Start Quizlet</a>
+        </b>
         </div>
         <div class="divTxt" id="divZeitstrukturQuiz1Question1">
             <fieldset>
                 <legend>
-                    <h1>Erzähltempo - Verhältnis zwischen Erzählzeit und erzählte Zeit. Zuordne den folgenden Beispiel.</h1>
+                    <h1>Erzähltempo - Verhältnis zwischen Erzählzeit und erzählte Zeit.</h1>
                     <h2>“Sie fuhren gegen Ligerz hinunter, hinein in ein Land, das sich ihnen in einer ungeheuren Tiefe öffnete. Weit ausgebreitet lagen die Elemente da: Stein, Erde, Wasser. Sie selbst fuhren im Schatten, aber die Sonne, hinter den Tessenberg
                         gesunken, beschien noch den See, die Insel, die Hügel, die Vorgebirge, die Gletscher am Horizont und die übereinandergetürmten Wolkenungetüme, dahinschwimmend in den blauen Meeren des Himmels. Unbeirrbar schaute der Alte in dieses
                         sich unaufhörlich ändernde Wetter des Vorwinters. Immer dasselbe, dachte er, wie es sich auch ändert, immer dasselbe.”</h2>
@@ -264,7 +267,7 @@
         <div class="divTxt" id="divZeitstrukturQuiz1Question2">
             <fieldset>
                 <legend>
-                    <h1>Erzähltempo - Verhältnis zwischen Erzählzeit und erzählte Zeit. Zuordne den folgenden Beispiel.</h1>
+                    <h1>Erzähltempo - Verhältnis zwischen Erzählzeit und erzählte Zeit.</h1>
                     <h2>Beispiel aus dem Text: “»Gastmann ist nicht der Mörder«, sagte Bärlach trocken. »Die Möglichkeit besteht, daß Gastmann den Mord angeordnet hat. Wir müssen seine Diener vernehmen!« entgegnete Tschanz. »Ich sehe nicht den geringsten
                         Grund, der Gastmann hätte veranlassen können, Schmied zu ermorden«, sagte der Alte. »Wir müssen den Täter dort suchen, wo die Tat einen Sinn hätte haben können, und dies geht nur den Bundesanwalt etwas an«, fuhr er fort. »Auch
                         der Schriftsteller hält Gastmann für den Mörder«, rief Tschanz aus. »Auch du hältst ihn dafür?» fragte Bärlach lauernd. »Auch ich, Kommissär.« »Dann du allein«,”
@@ -288,41 +291,38 @@
         </div>
         <div class="divTxt" id="divZeitstrukturQuiz1Question3">
             <fieldset>
-                <legend>
-                    <h1>Analyse der Erzählzeit.</h1>Zuordne folgende Antworten zu dem Beispiel: »Das gebe ich zu, Tschanz«, sagte Bärlach, unbeweglich in das verzweifelte Gesicht des Jungen starrend, »jahrelang bist du im Schatten dessen gestanden, der nun
-                    ermordet worden ist.«. »Nur weil er bessere Schulen hatte! Nur weil er Lateinisch konnte.« </legend>
+                <legend>todo frage 3</legend>
                 <br><br><br>
                 <input class="radioBtn" id="inputAnswer1" type="radio" value="1">
-                <label for="inputAnswer1">Vorausdeutung</label>
+                <label for="inputAnswer1">todo antwort 1</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer2" type="radio" value="2">
-                <label for="inputAnswer2">Rückblende</label>
+                <label for="inputAnswer2">todo antwort 2</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer3" type="radio" value="3">
-                <label for="inputAnswer3">Parallelhandlung</label>
+                <label for="inputAnswer3">todo antwort 3</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer4" type="radio" value="4">
-                <label for="inputAnswer4">Zeitdehnung</label>
+                <label for="inputAnswer4">todo antwort 4</label>
 
                 <button hidden></button>
             </fieldset>
         </div>
         <div class="divTxt" id="divZeitstrukturQuiz1Question4">
             <fieldset>
-                <legend>
-                    <h1>Analyse der Erzählzeit: Zur gleichen Zeit wie Peter in New York einen Kaffee trank, schrieb Kurt in Bern an seiner Doktorarbeit.</h1>></legend>
+                <legend>todo frage 4</legend>
                 <br><br><br>
                 <input class="radioBtn" id="inputAnswer1" type="radio" value="1">
-                <label for="inputAnswer1">Vorausdeutung</label>
+                <label for="inputAnswer1">todo antwort 1</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer2" type="radio" value="2">
-                <label for="inputAnswer2">Rückblende</label>
+                <label for="inputAnswer2">todo antwort 2</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer3" type="radio" value="3">
-                <label for="inputAnswer3">Zeitraffung</label>
+                <label for="inputAnswer3">todo antwort 3</label>
                 <br>
                 <input class="radioBtn" id="inputAnswer4" type="radio" value="4">
-                <label for="inputAnswer4">Parallelhandlung</label>
+                <label for="inputAnswer4">todo antwort 4</label>
 
                 <button hidden></button>
             </fieldset>
@@ -330,48 +330,48 @@
         <div class="divTxt" id="divZeitstrukturResults">
 
             <b class="txtStandard" id="txtZeitstrukturResults">
-                Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
-            </b>
+            Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
+        </b>
             <br>
 
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseIntro">
 
             <b class="txtStandard" id="txtZeitstrukturExercise">
-                Bitte denkt Euch nun in Eurer zuvor gebildeten Teilgruppe ein kleinen Text aus, welcher das von Euch gewähltes Erzähltempo anwendet. Schreibt den Text bitte auf eine der leeren Blätter, welche auf dem Tisch liegen. Aus zeitlichen Gründen sollte der Text nicht länger als ungefähr fünf Sätze beinhalten. Sofern Ihr als Teilgruppe fertig seid, wartet bitte auf die andere Teilgruppe und klickt dann auf den Weiter-Button.
-            </b>
+            Bitte denkt Euch nun in Eurer zuvor gebildeten Teilgruppe ein kleinen Text aus, welcher das von Euch gewähltes Erzähltempo anwendet. Schreibt den Text bitte auf eine der leeren Blätter, welche auf dem Tisch liegen. Aus zeitlichen Gründen sollte der Text nicht länger als ungefähr fünf Sätze beinhalten. Sofern Ihr als Teilgruppe fertig seid, wartet bitte auf die andere Teilgruppe und klickt dann auf den Weiter-Button.
+        </b>
 
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseDiscuss">
 
             <b class="txtStandard" id="txtZeitstrukturExerciseDiscuss">
-                Ließt Euch nun bitte innerhalb Eurer Teilgruppe den Text der anderen Teilgruppe durch. Wenn Ihr mit dem Lesen fertig seid, bestimmt jede Teilgruppe bitte, welches Erzähltempo die andere Teilgruppe gewählt hat.
-            </b>
+            Ließt Euch nun bitte innerhalb Eurer Teilgruppe den Text der anderen Teilgruppe durch. Wenn Ihr mit dem Lesen fertig seid, bestimmt jede Teilgruppe bitte, welches Erzähltempo die andere Teilgruppe gewählt hat.
+        </b>
 
         </div>
         <div class="divTxt" id="divZeitstrukturExerciseGuess">
 
             <b class="txtStandard" id="txtZeitstrukturExerciseGuess">
-                Teilt als Teilgruppe der anderen Teilgruppe das von Euch vermutete Erzähltempo mit. Fahrt unabhängig von der Richtigkeit der Antwort der anderen Teilgruppe gemeinsam als ganze Gruppe mit der nächsten Seite fort.
-            </b>
+            Teilt als Teilgruppe der anderen Teilgruppe das von Euch vermutete Erzähltempo mit. Fahrt unabhängig von der Richtigkeit der Antwort der anderen Teilgruppe gemeinsam als ganze Gruppe mit der nächsten Seite fort.
+        </b>
 
         </div>
 
         <div class="divTxt" id="divHandlungsstrukturRead1">
 
             <b class="txtStandard" id="txtZeitstrukturRead">
-                Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Kurzform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
+            Auf dieser und folgenden Seiten sind die Inhalte zum Thema Zeitstruktur in Kurzform aufgeführt. Bitte ließt Euch diese Texte individuell oder zusammen durch.
 
-                todo
-            </b>
+            todo
+        </b>
             <a id="linkZeitstrukturRead" href="todo: insert video link"></a>
 
         </div>
         <div class="divTxt" id="divHandlungsstrukturRead2">
 
             <b class="txtStandard" id="txtZeitstrukturRead">
-                divHandlungsstrukturRead2
-            </b>
+            divHandlungsstrukturRead2
+        </b>
             <a id="linkZeitstrukturRead" href="todo: insert video link"></a>
 
         </div>
@@ -454,15 +454,15 @@
         <div class="divTxt" id="divHandlungsstrukturResults">
 
             <b class="txtStandard" id="txtHandlungsstrukturResults">
-                Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
-            </b>
+            Hier seht Ihr Eure Ergebnisse vom Quiz. Bitte wartet auf die anderen Mitglieder und fahrt gemeinsam fort, indem Ihr gemeinsam auf den Weiter-Button klickt.
+        </b>
             <br>
 
         </div>
         <div class="divTxt" id="divOutro">
             <b class="txtStandard">
-                Vielen Dank, dass Ihr an dem Workshop teilgenommen habt. Wir hoffen, Ihr habt etwas lernen können. ;)
-            </b>
+            Vielen Dank, dass Ihr an dem Workshop teilgenommen habt. Wir hoffen, Ihr habt etwas lernen können. ;)
+        </b>
         </div>
         <div class="btn-row">
             <button id="back_btn" class="btnStandard">ZURÜCK</button>
